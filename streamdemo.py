@@ -166,8 +166,8 @@ elif Question == "17. Classify product sub-categories based on total revenue per
             GROUP BY SUB_CATEGORY)
             SELECT SUB_CATEGORY, total_revenue,
             CASE 
-            WHEN total_revenue > 100000 THEN 'High Performer'
-            WHEN total_revenue BETWEEN 50000 AND 100000 THEN 'Medium Performer'
+            WHEN total_revenue > 5000000 THEN 'High Performer'
+            WHEN total_revenue BETWEEN 1000000 AND 5000000 THEN 'Medium Performer'
             ELSE 'Low Performer'
             END AS performance_category FROM ProductRevenue;""")
     result17=cursor.fetchall()
