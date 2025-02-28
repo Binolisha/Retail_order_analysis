@@ -136,7 +136,7 @@ pip install streamlit
 ```
 Run the Streamlit app:
 ```bash
-streamlit run app/streamlit_app.py
+streamlit run streamdemo.py
 ```
 
 
